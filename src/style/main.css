@@ -107,7 +107,7 @@ body a:hover {
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   padding: 2rem;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 .sidebar.open {
