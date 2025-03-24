@@ -161,7 +161,7 @@ body.sidebar-open .navbar-brand img {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: row;
   border: 1px solid #b29463;
@@ -182,6 +182,9 @@ body.sidebar-open .navbar-brand img {
 .dark-mode-switch input[type=checkbox]:checked + .toggle-switch .slider {
   transform: translateX(1.375rem);
   background-color: #fff;
+}
+.dark-mode-switch span:nth-child(2) {
+  justify-content: center;
 }
 .dark-mode-switch .toggle-text {
   margin-left: 3.75rem;
@@ -252,6 +255,19 @@ body.sidebar-open .navbar-brand img {
   margin-top: auto;
 }
 
+.banner-content h2, .banner.banner-2 h2, .banner.banner-1 h2 {
+  color: #feffcf;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.banner-content p, .banner.banner-2 p, .banner.banner-1 p {
+  font-size: 1.25rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
 .banner {
   padding: 2rem;
   background-size: cover;
@@ -270,16 +286,11 @@ body.sidebar-open .navbar-brand img {
   grid-template-columns: repeat(4, 1fr);
 }
 .banner.banner-1 h2 {
-  color: #feffcf;
-  font-weight: 400;
   text-align: left;
-  margin: 2rem 0;
 }
 .banner.banner-1 p {
   font-size: 1.25rem;
   text-align: left;
-  margin-bottom: 1rem;
-  line-height: 1.6;
 }
 .banner.banner-2 {
   background-image: url("../../src/assets/banner-2.png");
@@ -290,18 +301,13 @@ body.sidebar-open .navbar-brand img {
   flex-direction: column;
 }
 .banner.banner-2 h2 {
-  color: #feffcf;
-  font-weight: 400;
   text-align: center;
-  margin: 2rem 0;
   font-size: 4rem;
 }
 .banner.banner-2 p {
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 1rem;
-  line-height: 1.6;
 }
 
 .banner-content {
@@ -309,10 +315,7 @@ body.sidebar-open .navbar-brand img {
   align-content: start;
 }
 .banner-content h2 {
-  color: #feffcf;
-  font-weight: 400;
   text-align: left;
-  margin: 2rem 0;
   font-size: 5.75rem;
   line-height: 5.84rem;
 }
@@ -322,8 +325,6 @@ body.sidebar-open .navbar-brand img {
 .banner-content p {
   font-size: 1.25rem;
   text-align: left;
-  margin-bottom: 1rem;
-  line-height: 1.6;
 }
 
 .banner-3 {

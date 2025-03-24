@@ -1,6 +1,19 @@
 @use "../base/variables";
 @use "../utils/mixins";
 
+%base-h2 {
+  color: variables.$heading-color;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+%base-p {
+  font-size: 1.25rem;
+  text-align: left;
+  margin-bottom: variables.$margin-bottom-regular;
+  line-height: 1.6;
+}
+
 .banner {
   padding: 2rem;
   background-size: cover;
@@ -16,16 +29,13 @@
       grid-template-columns: repeat(4, 1fr);
     }
     h2 {
-      color: variables.$heading-color;
-      font-weight: 400;
+      @extend %base-h2;
       text-align: left;
-      margin: 2rem 0;
     }
     p {
       font-size: 1.25rem;
       text-align: left;
-      margin-bottom: variables.$margin-bottom-regular;
-      line-height: 1.6;
+      @extend %base-p;
     }
   }
   &.banner-2 {
@@ -35,18 +45,15 @@
     @include mixins.flexbox($direction: column);
 
     h2 {
-      color: variables.$heading-color;
-      font-weight: 400;
+      @extend %base-h2;
       text-align: center;
-      margin: 2rem 0;
       font-size: 4rem;
     }
     p {
       font-size: 1.5rem;
       font-weight: 400;
       text-align: center;
-      margin-bottom: variables.$margin-bottom-regular;
-      line-height: 1.6;
+      @extend %base-p;
     }
   }
 }
@@ -54,10 +61,8 @@
   grid-column: 2 / 4;
   align-content: start;
   h2 {
-    color: variables.$heading-color;
-    font-weight: 400;
+    @extend %base-h2;
     text-align: left;
-    margin: 2rem 0;
     font-size: 5.75rem;
     line-height: 5.84rem;
     span {
@@ -67,8 +72,7 @@
   p {
     font-size: 1.25rem;
     text-align: left;
-    margin-bottom: variables.$margin-bottom-regular;
-    line-height: 1.6;
+    @extend %base-p;
   }
 }
 .banner-3 {
