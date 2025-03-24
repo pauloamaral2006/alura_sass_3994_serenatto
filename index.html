@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="./src/styles/main.css" />
   </head>
+
   <body>
     <header>
       <nav class="navbar">
@@ -57,7 +58,8 @@
           </div>
         </div>
       </nav>
-      <aside class="sidebar">
+
+      <aside class="sidebar" style="width: 100vw">
         <button class="sidebar-close" aria-label="Close sidebar">
           &times;
         </button>
@@ -91,6 +93,7 @@
         </ul>
       </aside>
     </header>
+
     <main>
       <section class="banner banner-1">
         <div class="banner-content-container">
@@ -112,6 +115,7 @@
           </div>
         </div>
       </section>
+
       <section class="services" id="servicos">
         <h2>Nossos Serviços</h2>
         <div class="services-container">
@@ -129,6 +133,7 @@
               </p>
             </div>
           </article>
+
           <article class="card">
             <img
               src="./src/assets/buffet.png"
@@ -143,6 +148,7 @@
               </p>
             </div>
           </article>
+
           <article class="card">
             <img
               src="./src/assets/delivery.png"
@@ -159,6 +165,7 @@
           </article>
         </div>
       </section>
+
       <section class="banner banner-2">
         <h2>Portas abertas para todos os públicos.</h2>
         <p>
@@ -167,6 +174,7 @@
           coworking!
         </p>
       </section>
+
       <section class="products" id="produtos">
         <h2>Nossos produtos</h2>
         <div class="products-container">
@@ -174,31 +182,38 @@
             <img src="./src/assets/cafe-tradicional.png" alt="Café preto" />
             <h3>Cafés Tradicionais</h3>
           </div>
+
           <div class="product-card" data-modal="modal-2">
             <img src="./src/assets/cafe-especial.png" alt="Café expresso" />
             <h3>Cafés Especiais</h3>
           </div>
+
           <div class="product-card">
             <img src="./src/assets/smoothies.png" alt="Vitaminas variadas" />
             <h3>Smoothies e Vitaminas</h3>
           </div>
+
           <div class="product-card">
             <img src="./src/assets/paes.png" alt="Pães variados" />
             <h3>Pães e Focaccias</h3>
           </div>
+
           <div class="product-card">
             <img src="./src/assets/bolo.png" alt="Bolo de morango" />
             <h3>Doces</h3>
           </div>
+
           <div class="product-card">
             <img src="./src/assets/quiche.png" alt="Torta salgada" />
             <h3>Salgados</h3>
           </div>
         </div>
       </section>
-      <section class="">
-        <img src="../../src/assets/cafe-graos.png" alt="Grãos de café" />
+
+      <section style="display: inline-block; width: 100%">
+        <img src="../src/../src/assets/cafe-graos.png" alt="Grãos de café" />
       </section>
+
       <section class="contact">
         <div class="contact-container">
           <h3>Entre em contato!</h3>
@@ -228,6 +243,7 @@
           </form>
         </div>
       </section>
+
       <footer>
         <div class="footer-content">
           <p>
@@ -242,6 +258,7 @@
         </div>
       </footer>
     </main>
+
     <!-- Modal 1 -->
     <div id="modal-backdrop-1" class="modal-backdrop"></div>
     <dialog id="modal-1" class="modal">
@@ -277,6 +294,7 @@
         </div>
       </div>
     </dialog>
+
     <!-- Modal 2 -->
     <div id="modal-backdrop-2" class="modal-backdrop"></div>
     <dialog id="modal-2" class="modal">
@@ -315,6 +333,7 @@
         </div>
       </div>
     </dialog>
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
